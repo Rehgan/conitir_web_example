@@ -1,0 +1,129 @@
+<!DOCTYPE html> 
+<html lang="en">
+	<head>
+		<meta charset="utf-8"> 
+		<!-- Sets the width equal to the device width and sets the initial zoom level -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+
+			#smalllist {
+				/*Make the list have a background of light blue*/
+				background-color:#7FDBFF;
+			}
+		</style>
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="myjavascript.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div class="jumbotron">
+					<h1 id="mainheader">Nomadic Lifestyle</h1>
+					<p class="lead">Fund your travel dreams!
+					</p>
+					<p>
+						<a class="btn btn-lg btn-success" href="#page2" role="button">See more</a>
+					</p>
+				</div>
+			</div>
+		</header>
+
+
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+		      		<a class="navbar-brand" href="#">NomadicLifestyle</a>
+		    	</div>
+	    		<ul class="nav navbar-nav">
+	      			<li class="active"><a href="#">Home</a></li>
+	      			<li><a href="#">Save Money</a></li>
+	      			<li><a href="#">Plan Your Route</a></li> 
+	      			<li><a href="#footer">Go to the footer!</a></li> 
+	    		</ul>
+		  	</div>
+		</nav>
+
+
+		
+		<div class="row" style="font-weight: bold">
+			<div class="col-sm-4">Plan</div>
+			<div class="col-sm-4">Save</div>
+			<div class="col-sm-4">Travel</div>
+		</div>
+		<div class="container" style="margin-top: 20px">
+			<h2>How to save money to travel.</h2>
+			<div class="row">
+				<div class="col-sm-4">
+					<p id="notcenter">It takes <strong>a lot</strong> of <em>motivation</em> to <span style="color:#2EFF63">put money away</span> for a trip in the future.</p>
+				</div>
+				<div class="col-sm-4">	
+					<img class="smaller" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Dollar_Sign.svg/500px-Dollar_Sign.svg.png">
+				</div>
+				<div class="col-sm-4">
+					<ul id="smalllist" style="list-style-type:square">
+						<li>Create a personal everyday budget</li>
+						<li>Decide how long you are willing to save before your trip</li>
+						<li>Figure out how much money should go towards your savings each paycheck</li>
+					</ul>
+				</div>	
+			<div>
+		</div>
+		
+		<div class="container" id="page2">
+			<h3>How to plan your route</h3>
+			<p>Click <a href="https://www.google.com/maps/d/u/0/edit?mid=1THjcirbq5RZCebOXTTVakTiLNao" target="_blank">here</a> for a really neat Google feature to plot your destinations.</p>
+			<img src="world-physical-map-lg.jpg" class="img-circle">
+		</div>
+
+
+		<div>
+			<p id="javascriptfun"></p>
+			<button type="button" onclick="applyStyling()">Surprise!</button>
+		</div>
+		<div>
+			<input id="numericInput" type="number">
+			<p id="result"></p>
+			<button type="button" onclick="testInput()">Test Input</button>
+		</div>
+
+		<h4>Oh the places you will go!</h4>
+		<div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin-bottom: 1000px">
+		    <div class="carousel-inner" role="listbox">
+		        <div class="item active">
+					India
+		        </div>
+		        <div class="item">
+					Fiji
+		        </div>
+		        <div class="item">
+					Laos
+		        </div>
+		        <div class="item">
+					Japan
+		        </div>
+		        <div class="item">
+					England
+		        </div>
+		        <div class="item">
+					Italy
+		        </div>
+		    </div>
+		</div>
+
+		
+
+		<footer>
+			<p id="footer">I am at the bottom of the page!</p>
+		</footer>
+
+		
+
+
+
+		
+	</body>
+</html>
